@@ -1,4 +1,5 @@
 project "imgui"
+    architecture "x86_64"
     kind "StaticLib"
     language "C++"
     location "build"
@@ -8,7 +9,9 @@ project "imgui"
 
     includedirs
     {
-        "."
+        ".",
+        "../glfw/include",
+        VULKAN_SDK_PATH .. "/Include",
     }
 
     files
