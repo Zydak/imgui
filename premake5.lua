@@ -11,7 +11,7 @@ project "imgui"
     {
         ".",
         "../glfw/include",
-        VULKAN_SDK_PATH .. "/Include",
+        "%{wks.location}/Vulture/lib/vulkanLib/Include/",
     }
 
     files
