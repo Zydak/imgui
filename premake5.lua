@@ -3,9 +3,15 @@ project "imgui"
     kind "StaticLib"
     language "C++"
     location "build"
+	staticruntime "on"
 
     objdir "build/obj/%{cfg.buildcfg}"
     targetdir "build/bin/%{cfg.buildcfg}"
+
+    defines
+    {
+        "D_CRT_SECURE_NO_WARNINGS"
+    }
 
     includedirs
     {
