@@ -30,6 +30,8 @@ project "imgui"
         "backends/*.cpp"
     }
 
+    buildoptions { "/MP" }
+
   filter "configurations:Debug"
 		runtime "Debug"
 		symbols "on"
