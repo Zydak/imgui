@@ -38,8 +38,8 @@ project "imgui"
 
 	filter "configurations:Release"
 		runtime "Release"
-		optimize "speed"
+		optimize "Full"
 
   filter "configurations:Dist"
 		runtime "Release"
-		optimize "speed"
+		optimize "Full"
