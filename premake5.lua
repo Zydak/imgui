@@ -17,7 +17,7 @@ project "imgui"
     {
         ".",
         "../glfw/include",
-        "%{wks.location}/Vulkan-Helper/lib/vulkanLib/Include/",
+        "%{wks.location}/VulkanHelper/lib/vulkanLib/Include/",
     }
 
     files
